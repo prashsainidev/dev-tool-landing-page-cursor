@@ -12,8 +12,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: #a1a1aa;
+    background-color: #26251E; /* Rangitoto */
+    color: #F7F7F4; /* Cararra */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -66,14 +66,14 @@ a {
     gap: 28px;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #e4e4e7;
+    color: rgba(247, 247, 244, 0.7); /* Translucent Cararra */
     margin-left: 24px;
     justify-content: center;
     flex: 1; /* Center links as per Cursor */
 }
 
 .nav-links li a:hover {
-    color: #ffffff;
+    color: #F7F7F4;
 }
 
 .nav-actions {
@@ -96,24 +96,24 @@ a {
 .btn-signin {
     padding: 6px 16px;
     background: transparent;
-    color: #e4e4e7;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #F7F7F4;
+    border: 1px solid rgba(247, 247, 244, 0.15);
 }
 
 .btn-signin:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(247, 247, 244, 0.05);
 }
 
 .btn-download-sm {
     padding: 6px 16px;
-    background: #e4e4e7;
-    color: #000;
-    border: 1px solid #e4e4e7;
+    background: #F54E00; /* International Orange */
+    color: #F7F7F4; /* Cararra */
+    border: 1px solid #F54E00;
 }
 
 .btn-download-sm:hover {
-    background: #ffffff;
-    border-color: #ffffff;
+    background: #D94400; /* Slightly darker orange */
+    border-color: #D94400;
 }
 
 /* hero stuff */
@@ -134,15 +134,15 @@ a {
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 1.15;
-    color: #f4f4f5;
+    color: #F7F7F4;
     margin-bottom: 32px;
 }
 
 .btn-large {
     padding: 12px 24px;
     font-size: 1rem;
-    background: #f4f4f5;
-    color: #000;
+    background: #F54E00;
+    color: #F7F7F4;
     border: none;
     display: inline-flex;
     gap: 8px;
@@ -150,13 +150,13 @@ a {
 }
 
 .btn-large:hover {
-    background: #ffffff;
+    background: #D94400;
 }
 
 /* fake editor mockup (replacing image) */
 .editor-window {
-    background: #0f0f0f;
-    border: 1px solid #222;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: hidden;
     margin-top: 40px;
@@ -167,13 +167,13 @@ a {
 }
 
 .editor-header {
-    background: #181818;
+    background: rgba(0, 0, 0, 0.6);
     height: 48px;
     display: flex;
     align-items: center;
     padding: 0 16px;
     position: relative;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .mac-dots {
@@ -207,8 +207,8 @@ a {
 
 .editor-sidebar {
     width: 250px;
-    background: #111;
-    border-right: 1px solid #222;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     padding: 16px;
 }
 
@@ -249,7 +249,7 @@ a {
 .editor-main {
     flex: 1;
     padding: 24px;
-    background: #0d0d0d;
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -404,9 +404,9 @@ a {
 /* feature cards grid */
 .feature-cards-section {
     padding: 100px 24px;
-    background: #080808;
-    border-top: 1px solid #111;
-    border-bottom: 1px solid #111;
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .section-title {
@@ -427,8 +427,8 @@ a {
 }
 
 .card {
-    background: #0d0d0d;
-    border: 1px solid #222;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     padding: 40px 32px;
     transition: transform 0.2s ease, border-color 0.2s ease;
@@ -477,8 +477,8 @@ a {
 }
 
 .testimonial {
-    background: #0d0d0d;
-    border: 1px solid #1a1a1a;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 40px;
     border-radius: 12px;
 }
@@ -531,8 +531,8 @@ a {
 }
 
 .use-case {
-    background: #111;
-    border: 1px solid #222;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     display: flex;
     flex-direction: column;

@@ -1,45 +1,44 @@
-# Cursor Landing Page Clone - Web Dev Cohort 2026
+# Cursor AI Editor - Landing Page Clone
 
-Hey everyone! This is my submission for the Chai Code Web Dev Cohort peer review assignment. I have recreated the desktop-first developer tool landing page inspired by the **Cursor website**, relying purely on HTML and CSS.
+![Cursor Clone Preview](./Cursor-The-AI-first-Code-Editor.png)
 
-**Author:** Prashant Saini
+> **Web Dev Cohort 2026 - Peer Review Assignment**  
+> **Author:** Prashant Saini  
+> **Tech Stack:** Pure HTML5 & CSS3 (No Frameworks)
 
-## 📸 Final Output Screenshot
+---
 
-Here is the final rendering of my cloned page:
+## 📌 Project Overview
 
-![Cursor Full Page Clone](./Cursor-The-AI-first-Code-Editor.png)
+This project is a high-fidelity, desktop-first, and fully responsive clone of the **Cursor AI Code Editor** landing page. Built entirely from scratch using vanilla HTML and CSS, it demonstrates advanced proficiency in modern web layouts, deep CSS Grid/Flexbox architectures, UI dark-mode transparency handling, and strict adherence to official brand guidelines.
 
-## 🎯 Learning & Approach
+## ⚙️ Technical Specifications
 
-My primary objective here wasn't to add fancy interactives or JavaScript plugins, but to completely nail the visual architecture and CSS layout structure exactly as the instructor requested.
+### Design & Layout Architecture
+- **Semantic HTML5:** Built using clean, accessible, and semantic landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
+- **CSS Grid & Flexbox:** Extensively utilized for complex modular component alignments, including the alternating feature blocks and the multi-column footer grids.
+- **Translucent Glass-Dark UI:** Instead of relying on static hardcoded blacks, UI cards and editor mockups employ `rgba()` translucency. This advanced technique ensures seamless depth perception and perfect blending over the deep Rangitoto background.
+- **Fully Responsive Architecture:** Multi-tier CSS media queries implemented to gracefully adapt layouts across Desktop (`>1024px`), Tablet (`768px - 1024px`), and Mobile (`<480px`) viewports.
 
-### Which Sections Were Recreated?
-I successfully mapped out and built all 11 required sections from the assignment brief:
-1. **Top Navigation Bar:** With proper links and carefully styled sign-in/download CTA buttons.
-2. **Hero Section:** Features the massive bold heading and a custom CSS-crafted mock Editor window (mimicking macOS buttons and code syntax blocks).
-3. **Trusted By / Logos:** Typography-based logos designed to mimic original SVG spacing and branding.
-4. **Feature Sections:** Three distinct, alternating layout blocks featuring text on one side and a mock visual on the other.
-5. **Feature Cards:** A 3-column flex/grid highlighting functionality.
-6. **Testimonials:** Clean layout for user reviews and avatars.
-7. **Use Cases / Stories:** Solid image-and-text card structure.
-8. **Changelog / Updates:** Date-stamped minimal list layout.
-9. **Team / About:** Spaced cleanly with a wide hero image layout.
-10. **Final CTA:** Bold headline and large button setup at the bottom.
-11. **Footer:** Split into a multi-column layout mimicking the complex actual Cursor site footer.
+### Official Brand Guidelines Implemented
+All assets and color systems strictly follow the provided Cursor design system:
+- **Primary Accent (International Orange):** `#F54E00` — Used for high-conversion CTAs and interactive highlights.
+- **Dark Mode Surface (Rangitoto):** `#26251E` — A premium deep olive-black tint replacing generic web backgrounds.
+- **Light UI Typography (Cararra):** `#F7F7F4` — A smooth off-white specifically deployed for premium typography contrast.
 
-### 🎨 Design System & Styling (Fonts and Colors)
-To keep the layout clean and visually accurate to the reference:
-- **Fonts Used:** I implemented the `Inter` font stack (`font-family: 'Inter', -apple-system, sans-serif`) to specifically match Cursor's premium tech typography. 
-- **Colors Used:**
-  - **Backgrounds:** Set up a nice dark mode theme using `#0a0a0a` & `#080808` to give section depth without using flat blacks everywhere.
-  - **Text:** Main headings use `#f4f4f5` (pure off-white) while paragraphs use `#a1a1aa` for comfortable readability.
-  - **Borders & UI:** Very subtle accents using `#1a1a1a` and `#222` to outline cards cleanly, giving it a premium glass/dark vibe.
+## 🏗️ Core Components Developed
 
-### Notes on Constraints Handled:
-- I strictly followed all constraints: **100% vanilla HTML and CSS**. 
-- **Zero JavaScript** and **Zero TailwindCSS** were used in this project.
-- No flashy, unnecessary animations or effects—pure layout logic.
-- Even though the assignment stated "desktop-only", I organically threw in some graceful CSS wrapper configurations (`max-width: 1200px`) and some extremely basic fallback media queries at the bottom of `style.css` so the grid doesn't visually break upon resizing, ensuring a smooth reviewing experience for peers.
+The following core landing page modules were successfully built:
+1. **Global Navigation:** Sleek top bar featuring official SVG brand assets and CTA buttons.
+2. **Hero Header:** High-impact typography with a pure CSS hero layout, avoiding heavy image dependencies.
+3. **Editor UI Mockup:** A CSS-simulated overlapping code editor interface (Sidebar, Active Tabs, Mock Code Diff) avoiding standard flat images.
+4. **Trusted Partners:** Opacity-controlled logo showcase layout.
+5. **Alternating Feature Showcases:** Custom `flex-direction: row-reverse` toggles explaining core AI features.
+6. **Bento Box Capabilities Grid:** A modern grid highlighting Terminal AI and One-Click Migration.
+7. **Testimonial Social Proof:** Card-based testimonial layout with image avatars.
+8. **Multi-Column Footer:** Deep navigational matrix matching the source architecture.
 
-Feel free to inspect the DOM and source code. Thanks for reviewing!
+## 🚀 Setup & Execution
+1. Clone this repository locally.
+2. Open `index.html` in any modern browser (or launch via VS Code Live Server).
+3. **Zero Dependencies:** No Tailwind, Node, or NPM installations are required.
