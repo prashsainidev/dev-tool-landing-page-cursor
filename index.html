@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- project by Prashant Saini -->
+    <title>Cursor Clone - Prashant Saini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- top nav -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#ffffff"/>
+                    <path d="M2 17L12 22L22 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                CURSOR
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="btn btn-signin">Sign in</a>
+            <a href="#" class="btn btn-download-sm">Download</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Built to make you extraordinarily productive,<br>Cursor is the best way to code with AI.</h1>
+            <button class="btn btn-large">Download for macOS <span style="font-size: 1.1rem;">&darr;</span></button>
+        </div>
+        
+        <!-- custom css mockup for the editor window -->
+        <div class="editor-window">
+            <div class="editor-header">
+                <div class="mac-dots">
+                    <div class="mac-dot red"></div>
+                    <div class="mac-dot yellow"></div>
+                    <div class="mac-dot green"></div>
+                </div>
+                <div class="editor-title">Cursor</div>
+            </div>
+            <div class="editor-body">
+                <div class="editor-sidebar">
+                    <div class="sidebar-title">In Progress 3</div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                        </div>
+                        <div>
+                            <div class="sidebar-item-desc">Enterprise Order Managem...</div>
+                            <div class="sidebar-item-sub">Generating</div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                        </div>
+                        <div>
+                            <div class="sidebar-item-desc">Analyze Tab vs Agent Usag...</div>
+                            <div class="sidebar-item-sub">Generating</div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                        </div>
+                        <div>
+                            <div class="sidebar-item-desc">Fix PR Comments Fetching I...</div>
+                            <div class="sidebar-item-sub">Generating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-main">
+                    <div class="editor-chat-box">
+                        <div class="editor-chat-head">PyTorch MNIST Experiments</div>
+                        <div class="editor-chat-text">Add mixed precision training, learning rate scheduling, and proper validation. Also create an experiment config system so I can easily run different hyperparameter settings.</div>
+                        <div class="editor-file-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            train_model.py <span>+156</span> <span style="color: #ef4444">-34</span>
+                        </div>
+                    </div>
+                    <div class="editor-code">
+                        <div class="code-line"><span class="code-keyword">import</span> torch</div>
+                        <div class="code-line"><span class="code-keyword">import</span> torch.nn <span class="code-keyword">as</span> nn</div>
+                        <div class="code-line code-diff-remove">- <span class="code-keyword">from</span> torch.utils.data <span class="code-keyword">import</span> DataLoader</div>
+                        <div class="code-line code-diff-add">+ <span class="code-keyword">from</span> torch.utils.data <span class="code-keyword">import</span> DataLoader, random_split</div>
+                        <div class="code-line code-diff-remove">- <span class="code-keyword">from</span> torchvision <span class="code-keyword">import</span> datasets</div>
+                        <div class="code-line code-diff-add">+ <span class="code-keyword">from</span> torchvision <span class="code-keyword">import</span> datasets, transforms</div>
+                        <div class="code-line code-diff-add">+ <span class="code-keyword">from</span> tqdm <span class="code-keyword">import</span> tqdm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- brands & logos -->
+    <section class="trusted-by">
+        <div class="container">
+            <p>Trusted by the world's best engineering teams</p>
+            <div class="logo-row">
+                <h2 style="font-family: Arial; font-weight: 800; letter-spacing: -2px; font-size: 32px">stripe</h2>
+                <h2 style="font-family: -apple-system, sans-serif; font-weight: 600; font-size: 28px">OpenAI</h2>
+                <h2 style="font-family: inherit; font-weight: 700; font-size: 28px">&#9650; Vercel</h2>
+                <h2 style="font-family: inherit; font-weight: 700; font-size: 28px; letter-spacing: -1px">shopify</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- features block (alt layout) -->
+    <section class="features-container">
+        <!-- Feature 1 -->
+        <div class="feature-block">
+            <div class="feature-content">
+                <h2>Predict your next edit</h2>
+                <p>Cursor predicts the next line or block of code based on your recent changes and entire codebase context. Save hours typing out repetitive logic or complex boilerplate.</p>
+            </div>
+            <div class="feature-visual">
+                <div class="mockup-ui">
+                    <div style="font-family: monospace; color: #a1a1aa; font-size: 14px;">
+                        <span style="color:#569cd6">function</span> <span style="color:#dedcd3">calculateMetrics</span>(data) {<br>
+                        &nbsp;&nbsp;<span style="color:#569cd6">const</span> sum = data.reduce((a, b) => a + b, 0);<br>
+                        &nbsp;&nbsp;<span style="color:#569cd6">const</span> average = sum / data.length;<br>
+                        <span style="opacity: 0.5; color: #6b7280; font-style: italic;">&nbsp;&nbsp;return { sum, average, min: Math.min(...data), max: Math.max(...data) };</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-block reverse">
+            <div class="feature-content">
+                <h2>Chat with your codebase</h2>
+                <p>Ask anything about your code. Cursor searches your repository, finds relevant files, and provides intelligent answers referencing exact lines and functions.</p>
+            </div>
+            <div class="feature-visual">
+                <div class="mockup-ui" style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="background: #1a1a1a; padding: 12px; border-radius: 6px; font-family: sans-serif; font-size: 13px; color: #fff;">
+                       User: How is the authentication token verified?
+                    </div>
+                    <div style="background: #111; padding: 12px; border-radius: 6px; font-family: sans-serif; font-size: 13px; color: #ccc; border: 1px solid #333">
+                       Cursor: The token is verified in <span style="color: #60a5fa">authController.ts</span> using the `verify` method from `jsonwebtoken`. Here is the exact implementation...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-block">
+            <div class="feature-content">
+                <h2>Fix bugs instantly</h2>
+                <p>Highlight a bug or an error message and press Cmd+K. Cursor will instantly diagnose the problem and write the correct diff to fix it inline.</p>
+            </div>
+            <div class="feature-visual">
+                <div class="mockup-ui">
+                    <div style="font-family: monospace; color: #a1a1aa; font-size: 14px;">
+                        <div style="background: rgba(2ef, 68, 68, 0.1); border-left: 2px solid #ef4444; padding: 5px; color: #ef4444">- TypeError: Cannot read properties of undefined (reading 'id')</div>
+                        <div style="background: rgba(16, 185, 129, 0.1); border-left: 2px solid #10b981; padding: 5px; color: #10b981; margin-top: 10px;">+ if (user && user.id) { ... }</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 column cards grid -->
+    <section class="feature-cards-section">
+        <h2 class="section-title">A completely new way to create software</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <h3>Intelligent Command K</h3>
+                <p>Generate, edit, or refactor code instantly with natural language prompts that understand your intent.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                </div>
+                <h3>Terminal AI</h3>
+                <p>Let AI execute commands, find missing dependencies, or write bash scripts directly in your integrated terminal.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+                </div>
+                <h3>One-Click Migration</h3>
+                <p>Built as a fork of VS Code. Import all your extensions, themes, and keybindings with a single click.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section -->
+    <section class="testimonials">
+        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">Loved by engineers at top startups</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p class="testimonial-quote">"Cursor's codebase context completely obliterates Copilot. I can ask questions about entirely different repos or microservices and it just knows exactly what to do. I feel like a 10x engineer."</p>
+                <div class="testimonial-author">
+                    <img class="t-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="David C.">
+                    <div class="t-info">
+                        <strong>David C.</strong>
+                        <span>Senior SWE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-quote">"The Cmd+K workflow is magical. Highlighting 4 functions, typing 'make these asynchronous and add error handling' and watching a flawless inline diff occur is unmatched."</p>
+                <div class="testimonial-author">
+                    <img class="t-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Elena M.">
+                    <div class="t-info">
+                        <strong>Elena M.</strong>
+                        <span>Tech Lead</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- use cases -->
+    <section class="use-cases">
+        <h2 class="section-title">Built for any stack</h2>
+        <div class="use-case-grid">
+            <div class="use-case">
+                <img class="use-case-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Frontend Apps">
+                <div class="use-case-text">
+                    <h3>Frontend Development</h3>
+                    <p>Rapidly scaffold React components, Tailwind layouts, and state management.</p>
+                </div>
+            </div>
+            <div class="use-case">
+                <img class="use-case-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Backend Architecture">
+                <div class="use-case-text">
+                    <h3>Backend Architecture</h3>
+                    <p>Generate database schemas, API endpoints, and complex business logic instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- changelog list -->
+    <section class="changelog">
+        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">Shipping fast</h2>
+        <div class="changelog-entry">
+            <div class="changelog-date">Feb 5, 2026</div>
+            <div class="changelog-info">
+                <h3>Cursor v0.46: Multi-file Edits</h3>
+                <p>Agent mode can now edit multiple files simultaneously, traversing directory structures to implement full-stack features.</p>
+            </div>
+        </div>
+        <div class="changelog-entry">
+            <div class="changelog-date">Jan 12, 2026</div>
+            <div class="changelog-info">
+                <h3>Cursor v0.45: Instant Indexing</h3>
+                <p>Codebase indexing is now 10x faster and requires virtually no CPU overhead on large monorepos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- team / about us -->
+    <section class="team">
+        <div class="team-inner">
+            <h2 class="section-title">Built by a team that loves code</h2>
+            <img class="team-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Team at work">
+            <p>Our mission is to build tools that eliminate the rote mechanical labor from programming. We believe that by automating the tedious parts of coding, developers can focus purely on creativity, architecture, and solving hard problems.</p>
+        </div>
+    </section>
+
+    <!-- bottom cta area -->
+    <section class="final-cta">
+        <h2>Write the code of your life.</h2>
+        <button class="btn btn-large" style="padding: 16px 32px; font-size: 1.15rem;">Download Cursor <span style="color: #666">&nbsp;macOS</span></button>
+    </section>
+
+    <!-- footer block -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col" style="padding-right: 40px;">
+                <div style="font-weight: 600; color: #fff; font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#ffffff"/>
+                        <path d="M2 17L12 22L22 17" stroke="#ffffff" stroke-width="2"/>
+                        <path d="M2 12L12 17L22 12" stroke="#ffffff" stroke-width="2"/>
+                    </svg>
+                    CURSOR
+                </div>
+                <p style="color: #888; font-size: 0.9rem;">The AI-first Code Editor</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Cursor Clone by Prashant Saini.</span>
+            <div style="display: flex; gap: 16px;">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
